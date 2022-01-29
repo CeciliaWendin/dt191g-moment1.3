@@ -1,0 +1,139 @@
+﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+body {
+    background-color: #e3e2df;
+    color: #5d001E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    color: #9A1750;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.page {
+    position: relative;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    background-color: #e3e2df;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header li {
+    display: inline;
+}
+
+.logotype {
+    font-size: 5em;
+    text-transform: uppercase;
+    color: #e3AFBC;
+    font-weight: 600;
+}
+
+.date {
+    float: right;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.sidebar {
+    width: 20%;
+    float: left;
+    height: 100%;
+    margin-top: 50px;
+}
+.nav-link {
+    margin-top: 20px;
+}
+
+    .sidebar ul {
+        list-style-type: none;
+    }
+
+    .sidebar li {
+        padding-top: 20px;
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: #9A1750;
+        text-transform: uppercase;
+    }
+
+.main {
+    width: 65%;
+    float: left;
+    padding-left: 20px;
+    height: 100%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+#blazor-error-ui {
+    display: none;
+}
+table {
+    padding: 15px;
+    border-collapse: collapse;
+}
+#course-table td, #course-table th {
+    padding: 15px;
+}
+#course-table th {
+    text-align: left;
+    border-bottom: 1px solid #5d001E;
+}
+@media screen and (max-width: 480px) {
+    .page {
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    header li {
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .date {
+        float: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    .main {
+        width: 100%;
+        float: none;
+        padding-left: 0px;
+    }
+
+    footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 70px;
+    }
+}
