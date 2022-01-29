@@ -1,0 +1,59 @@
+﻿@page "/konvertering";
+
+<PageTitle>dt191g | Konvertering</PageTitle>
+
+<h1>Konvertering</h1>
+
+<h2>Räkna om meter till fot</h2>
+
+<label for="meter">Skriv antal meter:</label>
+<input type="number" class="form-control" @bind="meter" />
+<br />
+<button class="btn btn-primary" @onclick="Calculate">Räkna ut</button>
+
+<br />
+<br />
+
+<b>@meter meter  är: @feet fot.</b>
+
+@code {
+
+    private double feet;
+
+    private double meter;
+
+    private void Calculate()
+    {
+        feet = Math.Round(meter * 3.2808, 2);
+    }
+
+}
+<br />
+<br />
+
+<h2>Räkna om km/h till miles/hour</h2>
+
+<label for="km">Skriv antal km/h:</label>
+<input type="number" class="form-control" @bind="km" />
+<br />
+<button class="btn btn-primary" @onclick="CalculateKm">Räkna ut</button>
+
+<br />
+<br />
+
+<b>@km km/h  är : @miles miles/h avrundat till närmsta heltal.</b>
+
+@code {
+
+    private double miles;
+
+    private double km;
+
+    private void CalculateKm()
+    {
+        miles = Math.Round(km * 0.621371192);
+    }
+
+}
+
+<Footer />
